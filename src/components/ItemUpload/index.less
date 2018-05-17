@@ -1,0 +1,60 @@
+.progress-btn-wrapper{
+    position: relative;
+    display: inline-block;
+    height: 28px;
+    width: 188px;
+    line-height: 28px;
+    cursor: default;
+    transition: all .32s ease;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+    .importing-btn {
+        position: relative;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        height: 28px;
+        width: 188px;
+        overflow: hidden;
+        line-height: 28px;
+        transition: opacity .6s ease;
+        will-change: opacity;
+
+        span {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            height: 26px;
+            background: #0FC8BC;
+        }
+
+        em {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: transparent;
+        }
+    }
+
+    .trigger-menu {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+.hide-btn {
+    opacity: 0;
+    transition-delay: .6s;
+}
+
+.import-result {  
+    p {
+        margin: 6px 0;
+    }
+}

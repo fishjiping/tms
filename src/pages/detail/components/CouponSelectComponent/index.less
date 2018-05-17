@@ -1,0 +1,78 @@
+.coupon-select-container {
+    .ant-modal-header{
+        background-color: #E8ECF0;
+        padding: 10px 16px;
+    }
+    .ant-input{
+        height: 100%;
+    }
+    .radioList .ant-table-thead > tr >th:first-child{
+       position: relative;
+    }
+    .radioList .ant-table-thead > tr >th:first-child::after{
+        position: absolute;
+        content: '选择';
+        top:0;
+        left: 10px;
+        font-weight: bold;
+    }
+    .ant-input-search-icon{
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        top: 0;
+        right: 0;
+        font-size:12px;
+        line-height: 30px;    
+    }
+    .ant-input-search-icon:hover{
+        color:#fff;
+    }
+    .anticon-search:before {
+        content: "查 询";
+    }
+    .ant-input-suffix {
+        width: 60px;
+        height: 30px;
+        text-align: center;
+        right: 0;
+        background: #F7BA00;
+        color:#fff;
+        border-radius: 0 3px 3px 0;
+        border-left:1px solid #d9d9d9;
+    }
+    
+    .ant-table-tbody>tr.highlight>td {
+        background: #F7FAFB;
+    }
+    
+    .ant-table-tbody>tr.disabled-coupon>td {
+        position: relative;
+        cursor: not-allowed;
+        background: #f7f7f7;
+        color: #bbb;
+        overflow: auto;
+    }
+    
+    .ant-table-tbody>tr.disabled-coupon>td:first-child:after{
+        position: absolute;
+        left: 0;
+        display: none;
+        width: 100%;
+        text-align: center;
+        color: #FF9800;
+        content: "已过期";
+    }
+    
+    .ant-table-tbody>tr.disabled-coupon>td:hover:after{
+        display: block;
+    }
+
+    .ant-table-selection:first-of-type {
+        display: none;
+    }
+}
+
+.ant-message {
+    z-index: 10000;
+}

@@ -1,0 +1,107 @@
+body {
+    padding-bottom: 0 !important;
+}
+
+.main-content {
+    position: relative;
+    padding-top: 20px;
+    border-radius: 3px;
+    background-color: #fff;
+
+    .create-btn {
+        position: absolute;
+        right: 50px;
+        z-index: 10;
+    }
+
+    .content-tabs{
+        &>.ant-tabs-bar {
+            margin: 0 30px 20px;
+        }
+    }
+
+    .tabs-container {
+        margin-top: 20px;
+        overflow: hidden;
+
+        .ant-tabs-nav {
+            display: flex;
+        }
+
+        .ant-tabs-nav-wrap {
+            margin-bottom: 0;
+        }
+
+        .ant-tabs-ink-bar {
+            height: 0;
+        }
+    
+        .ant-tabs-tab {
+            flex: 1;
+            height: 34px;
+            padding: 0;
+            border: 1px solid #e6e6e6;
+            line-height: 34px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            background-color: #fff;
+    
+            &:active, &:focus {
+                text-decoration: none;
+            }
+    
+            &:first-child {
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+    
+            &:last-child {
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+    
+            &:not(:last-child) {
+                margin-right: -1px;
+            }
+    
+            &.ant-tabs-tab-active {
+                position: relative;
+                z-index: 2;
+                border-color: #8ED8E5;
+                background-color: #EBF9FC;
+                color: #12B3CF;
+            }
+        }
+
+        .ant-tabs-bar {
+            margin: 0 30px 25px;
+            border-bottom: none !important;
+        }
+    }
+}
+
+.tag-list {
+    margin: 0 30px 5px;
+
+    .tag-item {
+        display: inline-block;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px; 
+        border: 1px solid #e2e2e2;
+        border-radius: 2px;
+        font-size: 12px;
+        line-height: 25px;
+        color: #333;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .tag-item-active {
+        border-color: #12B3CF;
+        color: #12B3CF;
+        cursor: default;
+    }
+}

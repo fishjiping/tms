@@ -1,0 +1,90 @@
+.template-container {
+    position: relative;
+    width: 362px;
+    padding: 10px;
+    border: 1px dashed #ddd;
+    background-color: #fafafa;
+
+    .can-drop {
+        box-shadow: 0 4px 6px rgba(18, 179, 207, .5);
+    }
+
+    .template {
+        min-height: 500px;
+        padding-bottom: 200px;
+        background-color: #fff;
+    }
+
+    .template-title {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 58px;
+        padding-top: 18px;
+        font-size: 16px;
+        color: #333;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .template-content {
+        .tms-module {
+            margin-bottom: 18px;
+        }
+    }
+
+    .tms-module-area {
+        box-sizing: border-box;
+        height: 100px;
+        margin-top: 18px;
+        line-height: 96px;
+        border: 2px dashed #ddd;
+        font-size: 28px;
+        color: #ddd;
+        text-align: center;
+    }
+
+    .tms-module {
+        position: relative;
+    }
+
+    .tms-module-img {
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    .tms-module-delete {
+        display: none;
+        position: absolute;
+        right: -6px;
+        top: -30px;
+        width: 25px;
+        height: 25px;
+        border: 1px dashed #FF001F;
+        color: #FF001F;
+        line-height: 23px;
+        cursor: pointer;
+    }
+
+    .tms-module-active {
+        &::after {
+            content: '';
+            box-sizing: content-box;
+            position: absolute;
+            left: -6px;
+            top: -6px;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            border: 1px dashed #FF001F;
+        }
+
+        .module-form,
+        .tms-module-delete {
+            display: block;
+        }
+    }
+    
+}
